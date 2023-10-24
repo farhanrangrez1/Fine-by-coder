@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from kofejob.dreamguystech.com/template/admin/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 07:44:09 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<title>Kofejob - Bootstrap Admin HTML Template</title>
+
+<link rel="shortcut icon" href="assets/img/favicon.png">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/feather.css">
+
+<link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+
+<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+<div class="header">
+
+<div class="header-left">
+<a href="index.html" class="logo">
+<img src="assets/img/logo.png" alt="Logo">
+</a>
+<a href="index.html" class="logo logo-small">
+<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
+</a>
+
+<a href="javascript:void(0);" id="toggle_btn">
+<i class="feather-chevrons-left"></i>
+</a>
+
+
+<a class="mobile_btn" id="mobile_btn">
+<i class="feather-chevrons-left"></i>
+</a>
+
+</div>
+
+
+<div class="top-nav-search">
+<form>
+<input type="text" class="form-control" placeholder="Start typing your Search...">
+<button class="btn" type="submit"><i class="feather-search"></i></button>
+</form>
+</div>
+
+
+<ul class="nav user-menu">
+
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+<i class="feather-bell"></i> <span class="badge badge-pill">5</span>
+</a>
+<div class="dropdown-menu notifications">
+<div class="topnav-dropdown-header">
+<span class="notification-title">Notifications</span>
+<a href="javascript:void(0)" class="clear-noti"> Clear All</a>
+</div>
+<div class="noti-content">
+<ul class="notification-list">
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt src="assets/img/profiles/avatar-02.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">Brian Johnson</span> paid the invoice <span class="noti-title">#DF65485</span></p>
+<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt src="assets/img/profiles/avatar-03.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">Marie Canales</span> has accepted your estimate <span class="noti-title">#GTR458789</span></p>
+<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<div class="avatar avatar-sm flex-shrink-0">
+<span class="avatar-title rounded-circle bg-primary-light"><i class="far fa-user"></i></span>
+</div>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">New user registered</span></p>
+<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt src="assets/img/profiles/avatar-04.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">Barbara Moore</span> declined the invoice <span class="noti-title">#RDW026896</span></p>
+<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<div class="avatar avatar-sm flex-shrink-0">
+<span class="avatar-title rounded-circle bg-info-light"><i class="far fa-comment"></i></span>
+</div>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">You have received a new message</span></p>
+<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="topnav-dropdown-footer">
+<a href="#">View all Notifications</a>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item dropdown has-arrow main-drop">
+<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+<span class="user-img">
+<img src="assets/img/profiles/avatar-07.jpg" alt>
+<span class="status online"></span>
+</span>
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="profile.html"><i data-feather="user" class="me-1"></i> Profile</a>
+<a class="dropdown-item" href="settings.html"><i data-feather="settings" class="me-1"></i> Settings</a>
+<a class="dropdown-item" href="login.html"><i data-feather="log-out" class="me-1"></i> Logout</a>
+</div>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="sidebar" id="sidebar">
+<div class="sidebar-inner slimscroll">
+<div id="sidebar-menu" class="sidebar-menu">
+<ul>
+<li class="menu-title"><span>Main</span></li>
+<li>
+<a href="index.html"><i data-feather="home"></i> <span>Dashboard</span></a>
+</li>
+<li>
+<a href="categories.html"><i data-feather="copy"></i> <span>Categories</span></a>
+</li>
+<li>
+<a href="projects.html"><i data-feather="database"></i> <span>Projects</span></a>
+</li>
+<li>
+<a href="users.html"><i data-feather="users"></i> <span>Freelancer</span></a>
+</li>
+<li>
+<a href="deposit.html"><i data-feather="user-check"></i> <span>Deposit</span></a>
+</li>
+<li>
+<a href="withdrawn.html"><i data-feather="user-check"></i> <span>Withdrawn</span></a>
+</li>
+<li>
+<a href="transaction.html"><i data-feather="clipboard"></i> <span>Transaction</span></a>
+</li>
+<li>
+<a href="providers.html"><i data-feather="user-check"></i> <span>Providers</span></a>
+</li>
+<li>
+<a href="subscription.html"><i data-feather="user-check"></i> <span>Subscription</span></a>
+</li>
+<li>
+<a href="reports.html"><i data-feather="pie-chart"></i> <span>Reports</span></a>
+</li>
+<li>
+<a href="roles.html"><i data-feather="clipboard"></i> <span>Roles</span></a>
+</li>
+<li>
+<a href="skills.html"><i data-feather="award"></i> <span>Skills</span></a>
+</li>
+<li>
+<a href="verify-identity.html"><i data-feather="user-check"></i> <span>Verify Identity</span></a>
+</li>
+<li>
+<a href="settings.html"><i data-feather="settings"></i> <span>Settings</span></a>
+</li>
+<li class="menu-title"><span>UI Interface</span></li>
+<li>
+<a href="components.html"><i data-feather="pocket"></i> <span>Components</span></a>
+</li>
+<li class="submenu">
+<a href="#"><i data-feather="file-minus"></i> <span> Forms</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="form-basic-inputs.html">Basic Inputs</a></li>
+<li><a href="form-input-groups.html">Input Groups</a></li>
+<li><a href="form-horizontal.html">Horizontal Form</a></li>
+<li><a href="form-vertical.html">Vertical Form</a></li>
+<li><a href="form-mask.html">Form Mask</a></li>
+<li><a href="form-validation.html">Form Validation</a></li>
+</ul>
+</li>
+<li class="submenu active">
+<a href="#"><i data-feather="align-justify"></i> <span> Tables</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="tables-basic.html" class="active">Basic Tables</a></li>
+<li><a href="data-tables.html">Data Table</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="page-wrapper">
+<div class="content container-fluid">
+
+<div class="page-header">
+<div class="row">
+<div class="col-sm-12">
+<h3 class="page-title">Basic Tables</h3>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Basic Table</h4>
+</div>
+<div class="table-responsive">
+<table class="table mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="254f4a4d4b65405d44485549400b464a48">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Moe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="7f121e0d063f1a071e120f131a511c1012">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>July</td>
+<td>Dooley</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="98f2edf4e1d8fde0f9f5e8f4fdb6fbf7f5">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Striped Rows</h4>
+</div>
+<div class="table-responsive">
+<table class="table table-striped mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="d6bcb9beb896b3aeb7bba6bab3f8b5b9bb">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Moe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="3a575b48437a5f425b574a565f14595557">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>July</td>
+<td>Dooley</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="dcb6a9b0a59cb9a4bdb1acb0b9f2bfb3b1">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Bordered Table</h4>
+</div>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="9ff5f0f7f1dffae7fef2eff3fab1fcf0f2">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Moe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="d0bdb1a2a990b5a8b1bda0bcb5feb3bfbd">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>July</td>
+<td>Dooley</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="204a554c59604558414d504c450e434f4d">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Hover Rows</h4>
+</div>
+<div class="table-responsive">
+<table class="table table-hover mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="52383d3a3c12372a333f223e377c313d3f">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Moe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="b1dcd0c3c8f1d4c9d0dcc1ddd49fd2dedc">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>July</td>
+<td>Dooley</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="204a554c59604558414d504c450e434f4d">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Contextual Classes</h4>
+</div>
+<div class="table-responsive">
+<table class="table mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td>Defaultson</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="096d6c6f497a66646c64686065276a6664">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-primary">
+<td>Primary</td>
+<td>Doe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="c9a3a6a1a789acb1a8a4b9a5ace7aaa6a4">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-secondary">
+<td>Secondary</td>
+<td>Moe</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="84e9e5f6fdc4e1fce5e9f4e8e1aae7ebe9">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-success">
+<td>Success</td>
+<td>Dooley</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="84eef1e8fdc4e1fce5e9f4e8e1aae7ebe9">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-danger">
+<td>Danger</td>
+<td>Refs</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="dfbdb09fbaa7beb2afb3baf1bcb0b2">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-warning">
+<td>Warning</td>
+<td>Activeson</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="0667657246637e676b766a632865696b">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-info">
+<td>Info</td>
+<td>Activeson</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="6b0a081f2b0e130a061b070e45080406">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-light">
+<td>Light</td>
+<td>Activeson</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="fb9a988fbb9e839a968b979ed5989496">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-dark">
+<td>Dark</td>
+<td>Activeson</td>
+<td><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="3455574074514c55594458511a575b59">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Responsive Tables</h4>
+</div>
+<div class="table-responsive">
+<table class="table table-nowrap mb-0">
+<thead>
+<tr>
+<th>#</th>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Age</th>
+<th>City</th>
+<th>Country</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/feather.min.js"></script>
+
+<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+
+<!-- Mirrored from kofejob.dreamguystech.com/template/admin/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 07:44:09 GMT -->
+</html>
